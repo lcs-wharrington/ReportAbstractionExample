@@ -22,7 +22,13 @@ struct ReportsListView: View {
             // "currentReport" will store each individual report
             // from the list as it iterates
             ForEach(listOfReports) { currentReport in
-                Text(currentReport.name)
+                
+                NavigationLink(destination: {
+                    Text("\(currentReport.grade)")
+                }, label: {
+                    Text(currentReport.name)
+                })
+                
             }
         }
         .navigationTitle("Reports")
