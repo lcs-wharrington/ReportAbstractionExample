@@ -11,7 +11,7 @@ import SwiftUI
 struct ReportAbstractionExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ReportsListView()
         }
     }
 }
